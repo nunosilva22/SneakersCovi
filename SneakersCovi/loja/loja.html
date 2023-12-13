@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    
+    
+    <title>Store SneakersCovi</title>
+    <link rel="stylesheet" href="css/loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  
+  </head>
+  <body>
+ <main>
+     
+<header class="header">
+  <div class="container header__top">
+      <div class="header__logo">
+        <button class="home"><a href="http://localhost:8888/interface/SneakersCovi/Projeto/Home.html">
+          <h1 class="header__title">
+            SC
+            <span class="header__subtitle">SneakersCovi</span>
+          </h1>
+        </button></a>
+      </div>  
+    
+    <div class="header__cart">
+      <ul>
+        <li class="header__submenu" id="submenu">
+          <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+          </svg>Carrinho</button>
+          <div id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Imagem</th>
+                  <th>Nome</th>
+                  <th>Preço</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="pagamento.php" class="cart-btn">Pagar</a>
+            <a href="#" id="clear-cart" class="cart-btn">Limpar Carrinho</a>
+          </div>
+          
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div class="header__main">
+    <p class="display-title text-light">
+      Compra o melhor conforto para os seus pés!
+    </p>
+  </div>
+  <div class="arrow"><svg width="24" height="24" viewBox="0 0 24 24">
+  <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"></path>
+  </svg></div>
+</header>
+<body>
+  <div class="grid" id="grid">
+    <div class="card">
+      <img src="./img/SAPATILHAS PRIMEBLUE.png" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Sapatilhas Primeblue</h4>
+        <p class="card__text">Faz a mala, calça-te e deixa-te ir. Uma atualização de sapatilhas de running aclamadas nos anos 80, estas sapatilhas modernas têm um topo em malha elástica e suave e amortecimento Boost com retorno de energia para conforto ao longo de todo o dia. Cores arrojadas e os icónicos elementos na entressola, para chegares com estilo a todo o lado onde vais.</p>
+        <p class="card__price">150€</p>
+        <button class="card__btn add-to-cart" data-id="1">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Nike Tiempo Legend 9 Pro AG-Pro.png" alt="Nike Tiempo Legend 9 Pro AG-Pro" class="card_image">      <div class="card__info">
+        <h4 class="card__title">Nike Tiempo Legend 9 Pro</h4>
+        <p class="card__text">Uma das nossas Tiempo mais leves até ao momento, as Nike Tiempo Legend 9 Pro AG-Pro permitem-te entrar na ofensiva com um design de baixo perfil reinventado para os avançados.A parte superior tem texturas em relevo, apoiadas por cápsulas de espuma macia para garantir fintas, passes e remates precisos, enquanto os pitões na parte inferior proporcionam tração para viragens rápidas e paragens súbitas.</p>
+        <p class="card__price">130€</p>
+        <button class="card__btn add-to-cart" data-id="2">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Nike_Go_FlyEase.png" alt="Nike Go FlyEase" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Nike Go FlyEase</h4>
+        <p class="card__text">Quando pensas que já viste tudo, a Nike surpreende com uma forma totalmente nova e rápida de calçar as sapatilhas.Todo o calcanhar (incluindo a sola) das Nike Go FlyEase abre-se para permitir calçar as sapatilhas sem usar as mãos.Enfia o pé, faz pressão e já está!Tudo a postos.</p>
+        <p class="card__price">129€</p>
+        <button class="card__btn add-to-cart" data-id="3">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Vans.png" alt="VANS TÉNIS OLD SKOOL" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Vans Ténis Old Skool</h4>
+        <p class="card__text">Conhecidos inicialmente como Vans #36, os Old Skool estrearam-se em 1977 com uma nova característica única: um rabisco aleatório desenhado pelo fundador Paul Van Doren, e originalmente referido como “jazz stripe”. Hoje, a famosa risca lateral tornou-se a marca inconfundível e instantaneamente reconhecível da marca Vans.</p>
+        <p class="card__price">99€</p>
+        <button class="card__btn add-to-cart" data-id="4">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/SAPATILHAS LA LAKERS.png" alt="SAPATILHAS LA LAKERS" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Sapatilhas LA Lakers</h4>
+        <p class="card__text">Estas sapatilhas de basquetebol têm uma sola com amortecimento em espuma injetada (EVA) que oferece um excelente conforto durante a prática.</p>
+        <p class="card__price">55€</p>
+        <button class="card__btn add-to-cart" data-id="5">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/SAPATILHAS TRAE YOUNG 1.png" alt="SAPATILHAS TRAE YOUNG 1" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Sapatilhas Trae Young 1</h4>
+        <p class="card__text">Sapatilhas com assinatura do Trae Young.
+          Produto feito parcialmente com conteúdo reciclado a partir de desperdícios, aparas e resíduos domésticos para evitar o maior impacto ambiental da produção de novo material.</p>
+        <p class="card__price">130€</p>
+        <button class="card__btn add-to-cart" data-id="6">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Nike Phantom GT2.png" alt="Nike Phantom GT2" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Nike Phantom GT2</h4>
+        <p class="card__text">JDesenvolvidas com base nas Nike Phantom GT2 Dynamic Fit MG exibem um design e padrões modernizados, concebidos para permitir remates com elevada precisão. O sistema de laçada descentrada proporciona uma zona de remate lisa para remates, passes e fintas com precisão.</p>
+        <p class="card__price">90€</p>
+        <button class="card__btn add-to-cart" data-id="7">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/City-Rider-Electric-Trainers.png" alt="City-Rider-Electric-Trainers" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">City Rider Electric Trainers</h4>
+        <p class="card__text">Uma versão pronta para a rua em nosso design Rider, a iteração City está pronta para fazer movimentos modernos. Feroz e futurista, com combinações de cores atraentes, energia elétrica brilhante, materiais misturados para uma rica influência textural, branding arrojado e uma silhueta retrô chique, este par prático tem uma estética atlética única e de inspiração urbana.</p>
+        <p class="card__price">90€</p>
+        <button class="card__btn add-to-cart" data-id="8">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/AG-Men's-Football-Boots.png" alt="FUTURE 1.3 FG/AG" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">FUTURE 1.3 FG/AG</h4>
+        <p class="card__text">Impressionantemente ágil e mais confortável do que nunca, a FUTURE é uma chuteira projetada para jogadores que comandam o campo com visão e habilidade.</p>
+        <p class="card__price">200€</p>
+        <button class="card__btn add-to-cart" data-id="9">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/LeBron 19.png" alt="Lebron 19" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Lebron 19</h4>
+        <p class="card__text">O LeBron prospera quando o desafio é grande e a pressão está em alta. As LeBron 19 tiram partido dessa energia com um ajuste firme e um sistema de amortecimento modernizado. O revestimento interior firme é criado a partir de uma sobreposição através da qual passam os atacadores para ajudar a reduzir o movimento dentro da sapatilha.</p>
+        <p class="card__price">189€</p>
+        <button class="card__btn add-to-cart" data-id="10">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Jordan Why Not_5.png" alt="Jordan Why Not .5?" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Jordan Why Not .5</h4>
+        <p class="card__text">O Russell Westbrook é veloz. Estas sapatilhas combinam com a sua velocidade com amortecimento modernizado, tração baseada em dados e um sistema de ajuste a todo o comprimento que permite manter o controlo. Com um look robusto e utilitário combinado com uma combinação intencional de cores e materiais, este modelo inspira-se nos fundamentos do lema "Why Not?" do Russel.</p>
+        <p class="card__price">139€</p>
+        <button class="card__btn add-to-cart" data-id="11">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Nike Mercurial 8 Elite FG.png" alt="Nike Mercurial 8 Elite FG" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Nike Mercurial 8 Elite FG</h4>
+        <p class="card__text">Desbloqueia a velocidade com as Nike Mercurial Superfly 8 Elite FG. Os blocos de cor nas laterais e no antepé destacam zonas estratégicas para fintas, passes e remates precisos. A placa inovadora proporciona reatividade imediata para viragens rápidas a alta velocidade.</p>
+        <p class="card__price">260€</p>
+        <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Sapatilhas Run 60S 2.0.png" alt="SAPATILHAS RUN 60S 2.0" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Sapatilhas Run 60S 2.0</h4>
+        <p class="card__text">Sapatilhas cheias de estilo, feitas para os dias mais preenchidos. As vibes do legado adidas surgem com estas sapatilhas inspiradas no running. Combinando o melhor do design clássico das pistas e as linhas elegantes do streetwear moderno, proporcionam uma sensação de intemporalidade que combina com o teu look do dia a dia.</p>
+        <p class="card__price">60€</p>
+        <button class="card__btn add-to-cart" data-id="13">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/PREDATOR FREAK.1.png" alt="PREDATOR FREAK.1" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">PREDATOR FREAK.1</h4>
+        <p class="card__text">Sempre que cruzas as linhas brancas, entras noutro mundo. Uma realidade alternativa onde quem manda és tu. O relvado é teu. Liberta a tua fera interior com adidas Predator. Estas botas de futebol facilitam o calçar graças ao design de cano baixo e ao cano sem costuras.</p>
+        <p class="card__price">110€</p>
+        <button class="card__btn add-to-cart" data-id="14">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="./img/Zion 1 SP.png" alt="Zion 1 SP" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Zion 1 SP</h4>
+        <p class="card__text">Combinando uma personalidade humilde com capacidade atlética de outro mundo, o Zion dá o seu melhor no jogo, com calçado a combinar. As suas sapatilhas são leves, estáveis e fortes, com uma sola exterior resistente que adere ao campo. Ao mesmo tempo, o amortecimento Air confere um conforto macio por baixo do pé e a reatividade rápida que conheces e adoras.</p>
+        <p class="card__price">129€</p>
+        <button class="card__btn add-to-cart" data-id="15">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__links">
+      <ul class="footer__list">
+        <li class="footer__list-item"><a class="footer__link-item" href="../Projeto/Home.html">About us</a></li>
+        <li class="footer__list-item"><a class="footer__link-item">Criado por:</a></li>
+        <li class="footer__link-item">
+          <a class="footer__link-item" href="https://github.com/Zalex37" target="_blank" rel="noopener noreferrer">Alexandre Costa Nª48967; 
+          <a class="footer__link-item" href="https://github.com/nunosilva22" target="_blank" rel="noopener noreferrer">Nuno Silva Nº48903; 
+          <a class="footer__link-item" href="https://github.com/CristinaMonteiro" target="_blank" rel="noopener noreferrer">Cristina Monteiro Nº47592
+        </li>
+        <li>
+          <a class="footer__link-item" href="https://github.com/Plataformas-e-Servicos-X-Ops/SneakersCovi" target="_blank" rel="noopener noreferrer">Disciplina: Plataformas e Servicos X-Ops</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>  
+
+ </main>
+  
+  <script  src="./js/script.js"></script>
+  </body>
+</html>
